@@ -23,7 +23,7 @@ document.querySelector('.contact-form').addEventListener('submit', async functio
     const chatId = '6226950895';
     const telegramApiUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
 
-    const text = `New message from contact form:\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`;
+    const text = `New message from contact form:\n\nName: ${name}\nEmail: ${email}\nPhone Number📞: ${subject}\nMessage📃: ${message}`;
 
     try {
         const response = await fetch(telegramApiUrl, {
